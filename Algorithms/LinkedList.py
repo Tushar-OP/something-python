@@ -36,6 +36,12 @@ class ListNode(Node):
 			ptr = ptr.next
 			
 		preptr.next = NewNode
+		
+         #Function to delete at the beginning
+         def delete_node_beginning(self):
+            ptr = self.head
+            self.head = ptr.next
+            ptr = None
 			
 		
 list = ListNode()
